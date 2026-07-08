@@ -176,8 +176,12 @@ export default function Cart({ setActivePage }) {
               className="flex items-center gap-4 p-4 rounded-xl bg-slate-900/40 border border-slate-800/80 glass justify-between"
             >
               {/* Product Info Mock Image */}
-              <div className="w-12 h-12 bg-slate-950 border border-slate-800 rounded-lg flex items-center justify-center text-[10px] text-purple-400 font-bold shrink-0">
-                GEAR
+              <div className="w-12 h-12 bg-slate-950 border border-slate-800 rounded-lg flex items-center justify-center overflow-hidden shrink-0">
+                {item.images && item.images.length > 0 ? (
+                  <img src={item.images[0]} alt={item.name} className="w-full h-full object-cover" />
+                ) : (
+                  <span className="text-[10px] text-purple-400 font-bold">GEAR</span>
+                )}
               </div>
 
               {/* Title & Price */}

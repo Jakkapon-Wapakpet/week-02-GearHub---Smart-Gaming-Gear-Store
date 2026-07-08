@@ -104,8 +104,12 @@ export default function Compare({ setActivePage }) {
                     </button>
 
                     {/* Simple visualization mock */}
-                    <div className="w-8 h-8 rounded-lg bg-slate-950 border border-slate-800 flex items-center justify-center text-[10px] text-purple-400 font-bold">
-                      {product.category.substring(0, 2).toUpperCase()}
+                    <div className="w-10 h-10 rounded-lg bg-slate-950 border border-slate-800 flex items-center justify-center overflow-hidden">
+                      {product.images && product.images.length > 0 ? (
+                        <img src={product.images[0]} alt={product.name} className="w-full h-full object-cover" />
+                      ) : (
+                        <span className="text-[10px] text-purple-400 font-bold">{product.category.substring(0, 2).toUpperCase()}</span>
+                      )}
                     </div>
 
                     <div className="space-y-1">

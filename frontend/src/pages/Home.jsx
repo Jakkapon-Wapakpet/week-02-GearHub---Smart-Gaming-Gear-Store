@@ -125,16 +125,24 @@ export default function Home() {
                     {product.stock > 0 ? `มีสินค้า (${product.stock})` : 'สินค้าหมด'}
                   </div>
 
-                  {/* Mock Image Area */}
+                  {/* Product Image Area */}
                   <div className="h-44 bg-slate-950/90 relative flex items-center justify-center border-b border-slate-800/40 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-65"></div>
-                    {/* Decorative device visualization */}
-                    <div className="w-12 h-20 rounded-xl border border-purple-500/20 flex flex-col items-center justify-between p-2 group-hover:scale-110 group-hover:border-purple-500/40 transition-transform">
-                      <div className="w-full h-1 bg-purple-500/30 rounded"></div>
-                      <div className="w-4 h-4 rounded-full border border-pink-500/20 flex items-center justify-center">
-                        <div className="w-1.5 h-1.5 bg-pink-500 rounded-full"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent opacity-45"></div>
+                    {product.images && product.images.length > 0 ? (
+                      <img 
+                        src={product.images[0]} 
+                        alt={product.name} 
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    ) : (
+                      /* Decorative device visualization */
+                      <div className="w-12 h-20 rounded-xl border border-purple-500/20 flex flex-col items-center justify-between p-2 group-hover:scale-110 group-hover:border-purple-500/40 transition-transform">
+                        <div className="w-full h-1 bg-purple-500/30 rounded"></div>
+                        <div className="w-4 h-4 rounded-full border border-pink-500/20 flex items-center justify-center">
+                          <div className="w-1.5 h-1.5 bg-pink-500 rounded-full"></div>
+                        </div>
                       </div>
-                    </div>
+                    )}
                   </div>
 
                   {/* Content */}
