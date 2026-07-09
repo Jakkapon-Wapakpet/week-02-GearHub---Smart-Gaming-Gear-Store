@@ -1,6 +1,38 @@
 const { ObjectId } = require('mongodb');
 const { getDB } = require('../config/db');
 
+// Helper function to populate specifications from separate collections
+async function populateSpecs(db, products) {
+  if (!products) return null;
+  const isArray = Array.isArray(products);
+  const list = isArray ? products : [products];
+
+  for (const product of list) {
+    let collectionName = '';
+    if (product.category === 'Mouse') {
+      collectionName = 'mouse_specs';
+    } else if (product.category === 'Keyboard') {
+      collectionName = 'keyboard_specs';
+    } else if (product.category === 'Headset') {
+      collectionName = 'headset_specs';
+    }
+
+    if (collectionName) {
+      const specs = await db.collection(collectionName).findOne({ productId: product._id });
+      if (specs) {
+        const { _id, productId, ...specDetails } = specs;
+        product.specifications = specDetails;
+      } else {
+        product.specifications = {};
+      }
+    } else {
+      product.specifications = {};
+    }
+  }
+
+  return isArray ? list : list[0];
+}
+
 // @desc    Get all products (with optional filtering by category and search)
 // @route   GET /api/products
 // @access  Public
@@ -24,7 +56,8 @@ async function getProducts(req, res) {
     }
 
     const products = await productsCollection.find(filter).toArray();
-    res.json(products);
+    const populatedProducts = await populateSpecs(db, products);
+    res.json(populatedProducts);
   } catch (error) {
     console.error("Get products error:", error);
     res.status(500).json({ message: "Server error" });
@@ -42,7 +75,8 @@ async function getProductById(req, res) {
     const product = await productsCollection.findOne({ _id: new ObjectId(req.params.id) });
 
     if (product) {
-      res.json(product);
+      const populatedProduct = await populateSpecs(db, product);
+      res.json(populatedProduct);
     } else {
       res.status(404).json({ message: "Product not found" });
     }
@@ -73,8 +107,9 @@ async function getCompareProducts(req, res) {
     const productsCollection = db.collection('products');
 
     const products = await productsCollection.find({ _id: { $in: idList } }).toArray();
+    const populatedProducts = await populateSpecs(db, products);
 
-    res.json(products);
+    res.json(populatedProducts);
   } catch (error) {
     console.error("Compare products error:", error);
     res.status(500).json({ message: "Invalid product IDs or server error" });
@@ -102,16 +137,34 @@ async function createProduct(req, res) {
       price: Number(price),
       stock: Number(stock),
       images: images || [],
-      specifications,
       tags: tags || [],
       createdAt: new Date(),
       updatedAt: new Date()
     };
 
     const result = await productsCollection.insertOne(newProduct);
-    const createdProduct = await productsCollection.findOne({ _id: result.insertedId });
+    const productId = result.insertedId;
 
-    res.status(201).json(createdProduct);
+    let specsCollectionName = '';
+    if (category === 'Mouse') {
+      specsCollectionName = 'mouse_specs';
+    } else if (category === 'Keyboard') {
+      specsCollectionName = 'keyboard_specs';
+    } else if (category === 'Headset') {
+      specsCollectionName = 'headset_specs';
+    }
+
+    if (specsCollectionName && specifications) {
+      await db.collection(specsCollectionName).insertOne({
+        productId,
+        ...specifications
+      });
+    }
+
+    const createdProduct = await productsCollection.findOne({ _id: productId });
+    const populatedProduct = await populateSpecs(db, createdProduct);
+
+    res.status(201).json(populatedProduct);
   } catch (error) {
     console.error("Create product error:", error);
     res.status(400).json({ message: error.message || "Failed to create product" });

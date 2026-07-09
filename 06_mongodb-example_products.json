@@ -1,0 +1,110 @@
+[
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de19372848b"
+    },
+    "name": "Razer Viper V3 Pro",
+    "description": "Premium gaming mouse designed for maximum competitive performance and esports players.",
+    "category": "Mouse",
+    "price": 500,
+    "stock": 5,
+    "images": [
+      "/images/products/viper-v3-pro-white.png"
+    ],
+    "tags": [
+      "mouse",
+      "black",
+      "wireless"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de19372848c"
+    },
+    "name": "Logitech G Pro X Superlight 2",
+    "description": "Premium gaming mouse designed for maximum competitive performance and esports players.",
+    "category": "Mouse",
+    "price": 780,
+    "stock": 8,
+    "images": [
+      "/images/products/g-pro-superlight-2-black.png"
+    ],
+    "tags": [
+      "mouse",
+      "white",
+      "wired"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de193728495"
+    },
+    "name": "Wooting 60HE+",
+    "description": "Analog mechanical gaming keyboard with rapid trigger technology.",
+    "category": "Keyboard",
+    "price": 8900,
+    "stock": 12,
+    "images": [
+      "/images/products/wooting-60he.png"
+    ],
+    "tags": [
+      "keyboard",
+      "mechanical",
+      "wired"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de193728496"
+    },
+    "name": "Keychron Q1 Pro",
+    "description": "Premium full-metal wireless custom mechanical keyboard.",
+    "category": "Keyboard",
+    "price": 6990,
+    "stock": 8,
+    "images": [
+      "/images/products/keychron-q1-pro.png"
+    ],
+    "tags": [
+      "keyboard",
+      "mechanical",
+      "wireless"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de193728498"
+    },
+    "name": "Razer BlackShark V2 Pro",
+    "description": "Definitive wireless esports gaming headset.",
+    "category": "Headset",
+    "price": 6490,
+    "stock": 18,
+    "images": [
+      "/images/products/blackshark-v2-pro-white.png"
+    ],
+    "tags": [
+      "headset",
+      "wireless",
+      "audio"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de193728499"
+    },
+    "name": "HyperX Cloud III",
+    "description": "The evolution of legendary comfort and audio clarity.",
+    "category": "Headset",
+    "price": 3490,
+    "stock": 25,
+    "images": [
+      "/images/products/cloud-iii-red-black.png"
+    ],
+    "tags": [
+      "headset",
+      "wired",
+      "audio"
+    ]
+  }
+]

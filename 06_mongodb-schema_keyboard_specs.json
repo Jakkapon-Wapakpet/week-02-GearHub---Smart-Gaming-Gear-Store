@@ -1,0 +1,15 @@
+{
+  "collectionName": "keyboard_specs",
+  "schema": {
+    "bsonType": "object",
+    "required": ["productId", "color", "connection", "weight", "switchType", "hotSwappable"],
+    "properties": {
+      "productId": { "bsonType": "objectId" },
+      "color": { "bsonType": "string" },
+      "connection": { "bsonType": "string" },
+      "weight": { "bsonType": "string" },
+      "switchType": { "bsonType": "string" },
+      "hotSwappable": { "bsonType": "bool" }
+    }
+  }
+}

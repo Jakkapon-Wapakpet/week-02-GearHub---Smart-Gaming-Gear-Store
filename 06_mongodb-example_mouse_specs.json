@@ -1,0 +1,22 @@
+[
+  {
+    "productId": {
+      "$oid": "6a4f1433acf18de19372848b"
+    },
+    "color": "Black",
+    "connection": "Wireless 2.4GHz / Wired",
+    "weight": "50g",
+    "sensor": "PixArt PAW3395",
+    "pollingRate": "8000Hz"
+  },
+  {
+    "productId": {
+      "$oid": "6a4f1433acf18de19372848c"
+    },
+    "color": "White",
+    "connection": "Wireless 2.4GHz / Wired",
+    "weight": "51g",
+    "sensor": "Focus Pro 35K Optical",
+    "pollingRate": "1000Hz"
+  }
+]

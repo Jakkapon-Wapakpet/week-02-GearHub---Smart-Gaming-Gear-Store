@@ -1,0 +1,20 @@
+[
+  {
+    "productId": {
+      "$oid": "6a4f1433acf18de193728498"
+    },
+    "color": "White",
+    "connection": "Wireless 2.4GHz / Bluetooth",
+    "weight": "320g",
+    "batteryLife": "Up to 70 hours"
+  },
+  {
+    "productId": {
+      "$oid": "6a4f1433acf18de193728499"
+    },
+    "color": "Red/Black",
+    "connection": "Wired USB-C / 3.5mm",
+    "weight": "310g",
+    "batteryLife": "N/A (Wired)"
+  }
+]

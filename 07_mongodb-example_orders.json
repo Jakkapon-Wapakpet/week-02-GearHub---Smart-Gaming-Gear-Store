@@ -1,0 +1,184 @@
+[
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de1937284bd"
+    },
+    "userId": {
+      "$oid": "6a4f1433acf18de19372845e"
+    },
+    "items": [
+      {
+        "productId": {
+          "$oid": "6a4f1433acf18de19372848b"
+        },
+        "name": "Razer Viper V3 Pro",
+        "price": 500,
+        "quantity": 1
+      }
+    ],
+    "shippingAddress": {
+      "receiverName": "สมชาย รักเรียน",
+      "phone": "0812345678",
+      "addressLine": "123/45 ซอย 5",
+      "subDistrict": "จอมพล",
+      "district": "จตุจักร",
+      "province": "กรุงเทพมหานคร",
+      "postalCode": "10900"
+    },
+    "paymentMethod": "CreditCard",
+    "totalAmount": 500,
+    "status": "Paid"
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de1937284be"
+    },
+    "userId": {
+      "$oid": "6a4f1433acf18de19372845f"
+    },
+    "items": [
+      {
+        "productId": {
+          "$oid": "6a4f1433acf18de19372848c"
+        },
+        "name": "Logitech G Pro X Superlight 2",
+        "price": 780,
+        "quantity": 1
+      }
+    ],
+    "shippingAddress": {
+      "receiverName": "สมศรี มีสุข",
+      "phone": "0823456789",
+      "addressLine": "88/9 หมู่บ้านแสนดี",
+      "subDistrict": "บางนา",
+      "district": "บางนา",
+      "province": "กรุงเทพมหานคร",
+      "postalCode": "10260"
+    },
+    "paymentMethod": "DebitCard",
+    "totalAmount": 780,
+    "status": "Processing"
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de1937284bf"
+    },
+    "userId": {
+      "$oid": "6a4f1433acf18de193728460"
+    },
+    "items": [
+      {
+        "productId": {
+          "$oid": "6a4f1433acf18de193728495"
+        },
+        "name": "Wooting 60HE+",
+        "price": 8900,
+        "quantity": 1
+      }
+    ],
+    "shippingAddress": {
+      "receiverName": "วิชัย รวยรื่น",
+      "phone": "0898765432",
+      "addressLine": "999/1 ถ.สุขุมวิท",
+      "subDistrict": "คลองเตย",
+      "district": "คลองเตย",
+      "province": "กรุงเทพมหานคร",
+      "postalCode": "10110"
+    },
+    "paymentMethod": "PromptPay",
+    "totalAmount": 8900,
+    "status": "Shipped",
+    "trackingNumber": "TH1000000001A"
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de1937284c0"
+    },
+    "userId": {
+      "$oid": "6a4f1433acf18de193728461"
+    },
+    "items": [
+      {
+        "productId": {
+          "$oid": "6a4f1433acf18de193728496"
+        },
+        "name": "Keychron Q1 Pro",
+        "price": 6990,
+        "quantity": 1
+      }
+    ],
+    "shippingAddress": {
+      "receiverName": "เกรียงไกร ไปไกล",
+      "phone": "0855551234",
+      "addressLine": "456 ซอยสุขใจ",
+      "subDistrict": "ห้วยขวาง",
+      "district": "ห้วยขวาง",
+      "province": "กรุงเทพมหานคร",
+      "postalCode": "10310"
+    },
+    "paymentMethod": "CreditCard",
+    "totalAmount": 6990,
+    "status": "Delivered",
+    "trackingNumber": "TH1000000002A"
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de1937284c1"
+    },
+    "userId": {
+      "$oid": "6a4f1433acf18de193728462"
+    },
+    "items": [
+      {
+        "productId": {
+          "$oid": "6a4f1433acf18de193728498"
+        },
+        "name": "Razer BlackShark V2 Pro",
+        "price": 6490,
+        "quantity": 1
+      }
+    ],
+    "shippingAddress": {
+      "receiverName": "สุพรรณิการ์ งามจริง",
+      "phone": "0867891234",
+      "addressLine": "77 ถนนพหลโยธิน",
+      "subDistrict": "สนามบิน",
+      "district": "ดอนเมือง",
+      "province": "กรุงเทพมหานคร",
+      "postalCode": "10210"
+    },
+    "paymentMethod": "PromptPay",
+    "totalAmount": 6490,
+    "status": "Pending"
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de1937284c2"
+    },
+    "userId": {
+      "$oid": "6a4f1433acf18de19372845e"
+    },
+    "items": [
+      {
+        "productId": {
+          "$oid": "6a4f1433acf18de193728499"
+        },
+        "name": "HyperX Cloud III",
+        "price": 3490,
+        "quantity": 1
+      }
+    ],
+    "shippingAddress": {
+      "receiverName": "สมชาย รักเรียน",
+      "phone": "0812345678",
+      "addressLine": "123/45 ซอย 5",
+      "subDistrict": "จอมพล",
+      "district": "จตุจักร",
+      "province": "กรุงเทพมหานคร",
+      "postalCode": "10900"
+    },
+    "paymentMethod": "CreditCard",
+    "totalAmount": 3490,
+    "status": "Cancelled"
+  }
+]

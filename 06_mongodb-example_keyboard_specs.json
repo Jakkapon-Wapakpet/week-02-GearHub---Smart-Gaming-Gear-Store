@@ -1,0 +1,22 @@
+[
+  {
+    "productId": {
+      "$oid": "6a4f1433acf18de193728495"
+    },
+    "color": "Black",
+    "connection": "Wired USB-C",
+    "weight": "600g",
+    "switchType": "Lekker Linear Hall Effect",
+    "hotSwappable": true
+  },
+  {
+    "productId": {
+      "$oid": "6a4f1433acf18de193728496"
+    },
+    "color": "Grey",
+    "connection": "Bluetooth / Wired",
+    "weight": "1700g",
+    "switchType": "Keychron K Pro Red",
+    "hotSwappable": true
+  }
+]

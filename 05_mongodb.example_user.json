@@ -1,0 +1,142 @@
+[
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de193728459"
+    },
+    "username": "admin_gearhub_1",
+    "email": "admin.1@gearhub.com",
+    "password": "$2b$10$hashedpasswordforuser_1_1234567890abcdefg",
+    "role": "admin",
+    "profile": {
+      "firstName": "สมศักดิ์",
+      "lastName": "รักงาน",
+      "phoneNumber": "0811111111"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de19372845a"
+    },
+    "username": "admin_gearhub_2",
+    "email": "admin.2@gearhub.com",
+    "password": "$2b$10$hashedpasswordforuser_2_1234567890abcdefg",
+    "role": "admin",
+    "profile": {
+      "firstName": "สมหมาย",
+      "lastName": "มุ่งมั่น",
+      "phoneNumber": "0822222222"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de19372845b"
+    },
+    "username": "admin_gearhub_3",
+    "email": "admin.3@gearhub.com",
+    "password": "$2b$10$hashedpasswordforuser_3_1234567890abcdefg",
+    "role": "admin",
+    "profile": {
+      "firstName": "สมจิต",
+      "lastName": "ขยันยิ่ง",
+      "phoneNumber": "0833333333"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de19372845c"
+    },
+    "username": "admin_gearhub_4",
+    "email": "admin.4@gearhub.com",
+    "password": "$2b$10$hashedpasswordforuser_4_1234567890abcdefg",
+    "role": "admin",
+    "profile": {
+      "firstName": "สมศรี",
+      "lastName": "ดีงาม",
+      "phoneNumber": "0844444444"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de19372845d"
+    },
+    "username": "admin_gearhub_5",
+    "email": "admin.5@gearhub.com",
+    "password": "$2b$10$hashedpasswordforuser_5_1234567890abcdefg",
+    "role": "admin",
+    "profile": {
+      "firstName": "สมชาย",
+      "lastName": "ยอดเยี่ยม",
+      "phoneNumber": "0855555555"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de19372845e"
+    },
+    "username": "gamer_pro_1",
+    "email": "gamer.1@example.com",
+    "password": "$2b$10$hashedpasswordforuser_6_1234567890abcdefg",
+    "role": "customer",
+    "profile": {
+      "firstName": "กิตติ",
+      "lastName": "เก่งกาจ",
+      "phoneNumber": "0866666666"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de19372845f"
+    },
+    "username": "gamer_pro_2",
+    "email": "gamer.2@example.com",
+    "password": "$2b$10$hashedpasswordforuser_7_1234567890abcdefg",
+    "role": "customer",
+    "profile": {
+      "firstName": "ธีระ",
+      "lastName": "รอบรู้",
+      "phoneNumber": "0877777777"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de193728460"
+    },
+    "username": "gamer_pro_3",
+    "email": "gamer.3@example.com",
+    "password": "$2b$10$hashedpasswordforuser_8_1234567890abcdefg",
+    "role": "customer",
+    "profile": {
+      "firstName": "อนันต์",
+      "lastName": "ขยันเพียร",
+      "phoneNumber": "0888888888"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de193728461"
+    },
+    "username": "gamer_pro_4",
+    "email": "gamer.4@example.com",
+    "password": "$2b$10$hashedpasswordforuser_9_1234567890abcdefg",
+    "role": "customer",
+    "profile": {
+      "firstName": "วีระ",
+      "lastName": "กล้าหาญ",
+      "phoneNumber": "0899999999"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a4f1433acf18de193728462"
+    },
+    "username": "gamer_pro_5",
+    "email": "gamer.5@example.com",
+    "password": "$2b$10$hashedpasswordforuser_10_1234567890abcdefg",
+    "role": "customer",
+    "profile": {
+      "firstName": "อภิชาติ",
+      "lastName": "ใจเย็น",
+      "phoneNumber": "0800000000"
+    }
+  }
+]

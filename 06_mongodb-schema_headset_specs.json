@@ -1,0 +1,14 @@
+{
+  "collectionName": "headset_specs",
+  "schema": {
+    "bsonType": "object",
+    "required": ["productId", "color", "connection", "weight", "batteryLife"],
+    "properties": {
+      "productId": { "bsonType": "objectId" },
+      "color": { "bsonType": "string" },
+      "connection": { "bsonType": "string" },
+      "weight": { "bsonType": "string" },
+      "batteryLife": { "bsonType": "string" }
+    }
+  }
+}

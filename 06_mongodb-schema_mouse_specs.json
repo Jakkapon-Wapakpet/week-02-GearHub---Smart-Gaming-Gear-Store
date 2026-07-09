@@ -1,0 +1,15 @@
+{
+  "collectionName": "mouse_specs",
+  "schema": {
+    "bsonType": "object",
+    "required": ["productId", "color", "connection", "weight", "sensor", "pollingRate"],
+    "properties": {
+      "productId": { "bsonType": "objectId" },
+      "color": { "bsonType": "string" },
+      "connection": { "bsonType": "string" },
+      "weight": { "bsonType": "string" },
+      "sensor": { "bsonType": "string" },
+      "pollingRate": { "bsonType": "string" }
+    }
+  }
+}
